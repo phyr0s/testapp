@@ -1,0 +1,11 @@
+{
+    "ios": {
+        "debug": {
+            "packageType": "development",
+            "codeSignIdentity": "iPhone Developer",
+            "buildFlag": [
+               "-UseModernBuildSystem=0"
+           ]
+        }
+    }
+}

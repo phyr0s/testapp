@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.cordova.plugin.openApp"
+    version="1.0.0"
+    xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <name>Open App Plugin</name>
+  <description>Open App Plugin</description>
+  <keywords></keywords>
+  <repo>https://github.com/videmort/testapp.git</repo>
+  <issue>https://github.com/videmort/testapp.git</issue>
+
+  <js-module src="www/connector_loader.js" name="openApp">
+     <clobbers target="window.cordova.plugins.openApp" />
+  </js-module>
+
+  <engines>
+    <engine name="cordova" version=">=6.5.0" />
+  </engines>
+
+  <!-- HTML files -->
+  <asset src="src/www" target="openApp" />
+
+
+  <!-- iOS -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="openApp">
+        <param name="ios-package" value="openApp" />
+      </feature>
+    </config-file>
+
+    <!-- Source -->
+    <header-file src="src/ios/openApp.h" />
+    <source-file src="src/ios/openApp.m" />
+  </platform>
+</plugin>
