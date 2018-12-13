@@ -1,6 +1,6 @@
 {
   "name": "open-app",
-  "version": "1.0.24",
+  "version": "1.0.0",
   "description": "Cordova plugin that open new app",
   "cordova": {
     "id": "open-app",
